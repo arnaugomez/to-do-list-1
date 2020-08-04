@@ -1,0 +1,48 @@
+
+
+#notePad {
+  max-width: 400px;
+  border-radius: 30px;
+}
+
+input:focus, button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.unimportant-task {
+  color: rgb(177, 177, 177);
+}
+.unimportant-task:hover {
+  animation: golden-star 1s forwards;
+}
+.important-task {
+  color: gold;
+}
+
+
+.animated-emoji:hover {
+  font-size: 1.2em;
+
+}
+.to-do-element:hover {
+  text-decoration: line-through;
+  animation: strikethrough-text 1s forwards
+}
+
+
+@keyframes golden-star {
+  100%{
+    color: gold;
+  }
+}
+@keyframes strikethrough-text {
+  100%{
+    color: rgb(177, 177, 177);
+  }
+}
+
+ul {
+  overflow:scroll;
+  max-height: 50vh;
+}
